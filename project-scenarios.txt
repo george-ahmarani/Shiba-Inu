@@ -1,5 +1,12 @@
 We will create a banking system app so that we can easily view account, pay bills etc.. using our device without having to move to any branch
 
+Scenario : make a money transfer
+
+      Given the owner of the account
+      When he want to make a money transfer
+      Then the amount to be transferred must be less than the account balance
+
+
 Scenario : View credit card transaction history
 
       Given any authenticated user
@@ -13,7 +20,7 @@ Scenario : Views account statement in pdf format
       And By clicking view statements in pdf
       Then I should download my statement in pdf format
 
-Scenario: Pay an invoice with a valid account
+Scenario : Pay an invoice with a valid account
 
       Given the owner of the account
       When pay a bill
