@@ -1,0 +1,5 @@
+Scenario : make a money transfer
+Given the owner of the account
+when he want to make a money transfer
+then the amount to be transferred must be less than the account balance
+
