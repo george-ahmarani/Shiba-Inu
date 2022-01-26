@@ -6,9 +6,9 @@ Scenario : View credit card transaction history
       When a user click on the credit card tab feature
       Then it will list all the transactions made during the current month
 
-Scenario : Jack views account statement in pdf format
+Scenario : Views account statement in pdf format
 
-      Given I am logged in as Jack
+      Given I am logged in as a user
       When I choose a chequing account
       And By clicking view statements in pdf
       Then I should download my statement in pdf format
