@@ -11,4 +11,13 @@ Scenario : Jack views account statement in pdf format
 Given I am logged in as Jack
 When I choose a chequing account
 And By clicking view statements in pdf
-Then I should download my statement in pdf format:
+Then I should download my statement in pdf format
+
+Scenario: Pay an invoice with a valid account
+
+      Given the owner of the account
+      When pay a bill
+      And Log into the personal account
+      And And Click on pay the bills
+      And Choose the invoice to pay
+      Then Check payment confirmation
