@@ -1,0 +1,7 @@
+Scenario: Jack views account statement in pdf format
+
+Given I am logged in as Jack
+When I choose a chequing account
+And By clicking view statements in pdf
+Then I should download my statement in pdf format:
+ 
